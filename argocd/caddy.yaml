@@ -10,7 +10,7 @@ spec:
      path: overlays
      targetRevision: helm_argo
     destination:
-     server: 'https://23731A3CE9652834647283DDB4E312A5.gr7.ap-south-1.eks.amazonaws.com'
+     server: 'https://kubernetes.default.svc'
 
      namespace: default
     # syncPolicy:
