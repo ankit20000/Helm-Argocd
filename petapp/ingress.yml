@@ -12,7 +12,7 @@ spec:
   rules:
     - http:
         paths:
-          - path: /  # Root path for accessing your service
+          - path: /petapp  # Root path for accessing your service
             pathType: Prefix
             backend:
               service:
