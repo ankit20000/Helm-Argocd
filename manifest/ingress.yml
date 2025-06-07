@@ -4,10 +4,10 @@ metadata:
   name: nginx-ingress
   namespace: nginx
   annotations:
-    kubernetes.io/ingress.class: alb  # Use ALB Ingress class
-    alb.ingress.kubernetes.io/scheme: internet-facing  # Can be internal or internet-facing
-    alb.ingress.kubernetes.io/target-type: ip  # Use IP-based routing for ALB
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'  # Define ALB listener
+    kubernetes.io/ingress.class: nginx  # Use ALB Ingress class
+    # alb.ingress.kubernetes.io/scheme: internet-facing  # Can be internal or internet-facing
+    # alb.ingress.kubernetes.io/target-type: ip  # Use IP-based routing for ALB
+    # alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'  # Define ALB listener
 spec:
   rules:
     - http:
