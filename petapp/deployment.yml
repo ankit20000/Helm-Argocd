@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: petapp-deployment-devops
+  namespace: petapp
 spec:
   replicas: 1 # You can change the number of replicas as needed
   selector:
