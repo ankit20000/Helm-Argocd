@@ -4,7 +4,7 @@ metadata:
   name: nginx-deployment-devops
   namespace: nginx
 spec:
-  replicas: 2 # You can change the number of replicas as needed
+  replicas: 3 # You can change the number of replicas as needed
   selector:
     matchLabels:
       app: nginx  # This label should match the selector in the Service
