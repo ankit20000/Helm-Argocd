@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/ankit20000/Helm-Argocd.git'
+    repoURL: 'https://github.com/StephenShenk1/Helm-Argocd.git'
     targetRevision: helm_argo
     path: manifest
   destination:
