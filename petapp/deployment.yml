@@ -4,7 +4,7 @@ metadata:
   name: petapp-deployment-devops
   namespace: petapp
 spec:
-  replicas: 1 # You can change the number of replicas as needed
+  replicas: 2 # You can change the number of replicas as needed.
   selector:
     matchLabels:
       app: petapp  # This label should match the selector in the Service
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: petapp
-        image: ankit1111/petapp:29cbe482fb2c4500fbfabf3af641ffefb2640642 # You can specify a different version if needed
+        image: stephenshenk/petapp:51c68206f2c52c2d34e8ddc799969f468b7d1aed # You can specify a different version if needed
         ports:
         - containerPort: 8080  # This should match the targetPort in the Service
 
