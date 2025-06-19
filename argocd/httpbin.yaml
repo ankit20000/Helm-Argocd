@@ -20,9 +20,9 @@ spec:
           type: NodePort    
 
   destination:
-    server: 'https://23731A3CE9652834647283DDB4E312A5.gr7.ap-south-1.eks.amazonaws.com'
+    #server: 'https://23731A3CE9652834647283DDB4E312A5.gr7.ap-south-1.eks.amazonaws.com'
 
-    namespace: default  # Change the namespace where the app will be deployed
+    namespace: petapp  # Change the namespace where the app will be deployed
 
   syncPolicy:
     automated:
