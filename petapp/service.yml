@@ -11,3 +11,7 @@ spec:
       targetPort: 8080
   selector:
     app: petapp
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 61e827d (Fix service type to LoadBalancer)
