@@ -3,12 +3,11 @@ kind: Service
 metadata:
   name: petapp-service
   namespace: petapp
-# or "elb" for a classic load balancer
 spec:
-  type: ClusterIP
+  type: LoadBalancer    # 👈 Kubernetes creates cloud LB automatically
   selector:
     app: petapp
   ports:
     - protocol: TCP
-      port: 8080
-      targetPort: 8080
+      port: 80           # External port
+      targetPort: 8080   # Pod port
