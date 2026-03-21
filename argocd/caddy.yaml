@@ -1,19 +1,19 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
 metadata:
-    name: caddy
-    namespace: argocd
-spec:
-    project: default
-    source:
-     repoURL: 'https://github.com/ankit20000/Helm-Argocd.git'
-     path: overlays
-     targetRevision: helm_argo
-    destination:
-     server: 'https://kubernetes.default.svc'
-
-     namespace: default
-    # syncPolicy:
-    #  automated:
-    #     selfHeal: true
-    #     prune: true
+    apiVersion: argoproj.io/v1alpha1
+    kind: Application
+    metadata:
+      name: caddy # Name of the application
+      namespace: argocd # Namespace where ArgoCD resides
+    spec:
+      project: default # ArgoCD project to associate with
+      source:
+        repoURL: "https://github.com/ankit20000/Helm-Argocd.git" # Git repository URL
+        path: overlays # Path to the Helm chart or manifests
+        targetRevision: helm_argo # Git branch, tag, or commit
+      destination:
+        server: "https://kubernetes.default.svc" # Kubernetes API server URL
+        namespace: default # Target namespace for the application
+      syncPolicy:
+        automated:
+          prune: true # Automatically remove resources not in Git
+          selfHeal: true # Automatically sync out-of-sync resources
