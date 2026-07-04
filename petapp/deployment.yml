@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: petapp
-        image: ankit1111/petapp:cb830132089657f688406ebd70f4cc290a00b8be # You can specify a different version if needed
+        image: ankit1111/petapp:31d42ff765dba3d229e8004f7da78f24a386c0d0 # You can specify a different version if needed
         ports:
         - containerPort: 8080  # This should match the targetPort in the Service
 
