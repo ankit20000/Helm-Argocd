@@ -1,18 +1,18 @@
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: petapp-ingress
-  namespace: petapp
-  annotations:
-    kubernetes.io/ingress.class: nginx    # or alb if using ALB controller
-spec:
-  rules:
-    - http:
-        paths:
-          - path: /petapp
-            pathType: Prefix
-            backend:
-              service:
-                name: petapp-service
-                port:
-                  number: 80
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   name: petapp-ingress
+#   namespace: petapp
+#   annotations:
+#     kubernetes.io/ingress.class: nginx    # or alb if using ALB controller
+# spec:
+#   rules:
+#     - http:
+#         paths:
+#           - path: /petapp
+#             pathType: Prefix
+#             backend:
+#               service:
+#                 name: petapp-service
+#                 port:
+#                   number: 80
