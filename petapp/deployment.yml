@@ -4,7 +4,7 @@ metadata:
   name: petapp-deployment-devops
   namespace: petapp
 spec:
-  replicas: 1 # You can change the number of replicas as needed
+  replicas: 2 # You can change the number of replicas as needed
   selector:
     matchLabels:
       app: petapp  # This label should match the selector in the Service
